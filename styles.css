@@ -36,5 +36,7 @@ h1 {
   border: 1px solid #333333;
   cursor: pointer;
   line-height: 100px;
-  font-size: 60px;
+  font-size: 130px;
+  text-align: center;
+  line-height: 180px;
 }

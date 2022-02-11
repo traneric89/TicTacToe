@@ -1,0 +1,11 @@
+- click on cell to start game and first will be an X 
+- next click on a blank cell witll be O and so on... 
+
+- keep track of already clicked cells 
+- if cell already clicked and click again then nothing happens 
+
+- have to keep track of what next player will be (next click)
+
+- figure out all possibilities of winning and stop game when that happens
+
+- restart button clears board 
