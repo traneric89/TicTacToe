@@ -1,11 +1,23 @@
-- click on cell to start game and first will be an X 
-- next click on a blank cell witll be O and so on... 
+- click on cell to start game and first will be an X   DONE 
+- next click on a blank cell witll be O and so on...  DONE 
 
-- keep track of already clicked cells 
-- if cell already clicked and click again then nothing happens 
+- keep track of already clicked cells  DONE 
+- if cell already clicked and click again then nothing happens  DONE 
 
-- have to keep track of what next player will be (next click)
+- have to keep track of what next player will be (next click) DONE 
 
-- figure out all possibilities of winning and stop game when that happens
+- figure out all possibilities of winning and stop game when that happens NOT DONE
 
-- restart button clears board 
+- restart button clears board  DONE 
+
+
+** brute force algorithm to go through all possible combinations of winner set of 3 characters 
+ ex. 13478 selected for X
+134
+147  -> winnner in this case.
+138
+
+347
+348
+
+478
