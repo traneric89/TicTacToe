@@ -1,3 +1,6 @@
+const overlay = document.querySelector(".overlay");
+const winnerDiv = document.querySelector(".winner");
+
 let gameStarted = 0;
 let playerXTurn = 1;
 let arrayX = [];
@@ -25,6 +28,12 @@ const playerTurn = (index) => {
     winCheck();
     playerXTurn = 1;
   }
+};
+
+const playGame = () => {
+  overlay.style.opacity = 1;
+  winnerDiv.style.visibility = "hidden";
+  restartGame();
 };
 
 const restartGame = () => {
@@ -66,7 +75,13 @@ const winAlgo = (toCheck) => {
         let possibleCombination =
           toCheck.charAt(i) + toCheck.charAt(j) + toCheck.charAt(j + 1);
         if (possibleCombination == condition) {
-          console.log("winner found!");
+          overlay.style.opacity = 0.1;
+          winnerDiv.style.visibility = "visible";
+          gameArray = [
+            [1, 1, 1],
+            [1, 1, 1],
+            [1, 1, 1],
+          ];
         }
       }
     }

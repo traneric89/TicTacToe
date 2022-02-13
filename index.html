@@ -12,72 +12,89 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/styles.css" />
     <title>Tic Tac Toe</title>
   </head>
   <body>
-    <h1 class="title">Tic Tac Toe</h1>
-    <div class="gameboard-container">
-      <div
-        data-cell-index="0"
-        class="cell"
-        id="cell0"
-        onclick="playerTurn(0)"
-      ></div>
-      <div
-        data-cell-index="1"
-        class="cell"
-        id="cell1"
-        onclick="playerTurn(1)"
-      ></div>
-      <div
-        data-cell-index="2"
-        class="cell"
-        id="cell2"
-        onclick="playerTurn(2)"
-      ></div>
-      <div
-        data-cell-index="3"
-        class="cell"
-        id="cell3"
-        onclick="playerTurn(3)"
-      ></div>
-      <div
-        data-cell-index="4"
-        class="cell"
-        id="cell4"
-        onclick="playerTurn(4)"
-      ></div>
-      <div
-        data-cell-index="5"
-        class="cell"
-        id="cell5"
-        onclick="playerTurn(5)"
-      ></div>
-      <div
-        data-cell-index="6"
-        class="cell"
-        id="cell6"
-        onclick="playerTurn(6)"
-      ></div>
-      <div
-        data-cell-index="7"
-        class="cell"
-        id="cell7"
-        onclick="playerTurn(7)"
-      ></div>
-      <div
-        data-cell-index="8"
-        class="cell"
-        id="cell8"
-        onclick="playerTurn(8)"
-      ></div>
+    <div class="winner">
+      <h2>Winner!</h2>
+      <button class="btn" id="playBtn" onclick="playGame()">Play Again</button>
     </div>
-    <div class="reset">
-      <button class="btn" id="restartBtn" onclick="restartGame()">
-        Restart
-      </button>
+    <div class="overlay">
+      <h1 class="title">Tic Tac Toe</h1>
+      <div class="gameboard-container">
+        <div
+          data-cell-index="0"
+          class="cell"
+          id="cell0"
+          onclick="playerTurn(0)"
+        ></div>
+        <div
+          data-cell-index="1"
+          class="cell"
+          id="cell1"
+          onclick="playerTurn(1)"
+        ></div>
+        <div
+          data-cell-index="2"
+          class="cell"
+          id="cell2"
+          onclick="playerTurn(2)"
+        ></div>
+        <div
+          data-cell-index="3"
+          class="cell"
+          id="cell3"
+          onclick="playerTurn(3)"
+        ></div>
+        <div
+          data-cell-index="4"
+          class="cell"
+          id="cell4"
+          onclick="playerTurn(4)"
+        ></div>
+        <div
+          data-cell-index="5"
+          class="cell"
+          id="cell5"
+          onclick="playerTurn(5)"
+        ></div>
+        <div
+          data-cell-index="6"
+          class="cell"
+          id="cell6"
+          onclick="playerTurn(6)"
+        ></div>
+        <div
+          data-cell-index="7"
+          class="cell"
+          id="cell7"
+          onclick="playerTurn(7)"
+        ></div>
+        <div
+          data-cell-index="8"
+          class="cell"
+          id="cell8"
+          onclick="playerTurn(8)"
+        ></div>
+      </div>
+      <div class="reset">
+        <button class="btn" id="restartBtn" onclick="restartGame()">
+          Restart
+        </button>
+      </div>
     </div>
+    <footer class="footer">
+      <p>Copyright © 2021 Eric Tran</p>
+      <a href="https://github.com/traneric89" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
   </body>
   <script src="/script.js"></script>
 </html>

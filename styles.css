@@ -5,10 +5,43 @@
   font-family: "Bangers", cursive;
 }
 
+.overlay {
+  opacity: 1;
+}
+
+body {
+  background-image: linear-gradient(to right, #eea47f, #00539c);
+}
+
 h1 {
+  color: rgb(50, 49, 53);
   text-align: center;
-  font-size: 92px;
-  margin-top: 24px;
+  font-size: 125px;
+  padding-top: 50px;
+}
+
+.winner {
+  visibility: hidden;
+  background-color: rgb(224, 223, 230);
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  margin-top: 305px;
+  padding: 75px 0;
+  opacity: 1;
+}
+
+.winner h2 {
+  color: rgb(46, 173, 46);
+  font-size: 125px;
+  letter-spacing: 10px;
+  margin-bottom: 50px;
+}
+
+.winner button {
+  cursor: pointer;
 }
 
 .reset {
@@ -25,7 +58,7 @@ h1 {
   grid-template-columns: repeat(3, auto);
   width: 540px;
   margin: 50px auto;
-  background-color: aliceblue;
+  background-color: rgb(230, 239, 247);
 }
 
 .cell {
@@ -39,4 +72,28 @@ h1 {
   font-size: 130px;
   text-align: center;
   line-height: 180px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.fa-github {
+  color: black;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
 }
