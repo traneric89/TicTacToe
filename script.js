@@ -54,39 +54,14 @@ const winCheck = () => {
     .sort((a, b) => a - b)
     .toString()
     .replace(/,/g, "");
-
-  // console.log(sortedCellsO);
-  // console.log(sortedCellsX);
-
   if (playerXTurn == 1) {
     winAlgo(sortedCellsX);
     console.log(arrayX);
     console.log(sortedCellsX);
-    // if (sortedCellsX.length <= 3) {
-    //   winAlgo(sortedCellsX);
-    //   console.log(sortedCellsX);
-    // } else if (sortedCellsX.length == 4) {
-    //   // winAlgo(sortedCellsX.substring(0, 3));
-    //   // winAlgo(sortedCellsX.substring(1, 3));
-    //   console.log(sortedCellsX);
-    // } else if (sortedCellsX.length == 5) {
-    //   // winAlgo(sortedCellsX.substring(0, 3));
-    //   // winAlgo(sortedCellsX.substring(1, 3));
-    //   // winAlgo(sortedCellsX.substring(2, 3));
-    //   console.log(sortedCellsX);
-    // }
   } else {
     winAlgo(sortedCellsO);
     console.log(arrayO);
     console.log(sortedCellsO);
-    // if (sortedCellsO.length <= 3) {
-    //   winAlgo(sortedCellsO);
-    //   console.log(sortedCellsO);
-    // } else if (sortedCellsO.length == 4) {
-    //   // winAlgo(sortedCellsO.substring(0, 3));
-    //   // winAlgo(sortedCellsO.substring(1, 3));
-    //   console.log(sortedCellsO);
-    // }
   }
 };
 
@@ -104,14 +79,3 @@ const winAlgo = (toCheck) => {
     }
   });
 };
-
-// const algo = (string) => {
-//   for (let i = 0; i < string.length - 1; i++) {
-//     for (let j = 1; j < string.length - 2; j++) {
-//       let possibleCombination = (string.charAt(i) + string.charAt(j) + string.charAt(j + 1));
-//       if(toCheck == condition){
-//         console.log("winner found!");
-//       }
-//     }
-//   }
-// };
