@@ -41,8 +41,6 @@ const restartGame = () => {
   ];
   arrayX = [];
   arrayO = [];
-  console.log(arrayX);
-  console.log(arrayO);
 };
 
 const winCheck = () => {
@@ -56,12 +54,8 @@ const winCheck = () => {
     .replace(/,/g, "");
   if (playerXTurn == 1) {
     winAlgo(sortedCellsX);
-    console.log(arrayX);
-    console.log(sortedCellsX);
   } else {
     winAlgo(sortedCellsO);
-    console.log(arrayO);
-    console.log(sortedCellsO);
   }
 };
 
@@ -71,7 +65,6 @@ const winAlgo = (toCheck) => {
       for (let j = 1; j < toCheck.length - 1; j++) {
         let possibleCombination =
           toCheck.charAt(i) + toCheck.charAt(j) + toCheck.charAt(j + 1);
-        console.log(possibleCombination);
         if (possibleCombination == condition) {
           console.log("winner found!");
         }
